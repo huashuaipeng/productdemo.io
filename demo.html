@@ -277,7 +277,7 @@
 						return;
 					}
 					sizes[this.title].push(this.skuinput.val())
-					this.skumlist.append($('<span class="sku_item"><a id="' + getIndex() + '">' + value + '</a><i class="sku_item_close">×</i></span>'))
+					this.skumlist.append($('<span class="sku_item"><a data-id="' + getIndex() + '">' + value + '</a><i class="sku_item_close">×</i></span>'))
 					this.skuinput.val("")
 				},
 				//子元素是否选中事件
